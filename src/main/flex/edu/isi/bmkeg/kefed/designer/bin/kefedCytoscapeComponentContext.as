@@ -1,7 +1,6 @@
 package edu.isi.bmkeg.kefed.designer.bin
 {	
 	import edu.isi.bmkeg.kefed.designer.*;
-	import edu.isi.bmkeg.ooevv.editor.*;
 		
 	import flash.display.DisplayObjectContainer;
 	
@@ -9,12 +8,12 @@ package edu.isi.bmkeg.kefed.designer.bin
 	
 	import org.robotlegs.utilities.modular.mvcs.ModuleContext;
 	
-	public class kefedComponentContext extends ModuleContext
+	public class kefedCytoscapeComponentContext extends ModuleContext
 	{
 
 		override public function startup():void
 		{
-			viewMap.mapType(KefedDesignerModule);		
+			viewMap.mapType(KefedDesignerModule2);		
 		}
 		
 	}
