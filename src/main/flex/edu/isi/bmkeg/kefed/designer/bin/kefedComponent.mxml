@@ -24,8 +24,8 @@
 			// load an existing article for testing
 			protected function application1_initializeHandler(event:FlexEvent):void
 			{
-				this.currentArticleCitation = new ArticleCitation();
-				this.currentArticleCitation.vpdmfId = 44946
+				//this.currentArticleCitation = new ArticleCitation();
+				//this.currentArticleCitation.vpdmfId = 44946
 			}
 			
 		]]>

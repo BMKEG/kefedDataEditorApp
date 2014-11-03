@@ -38,7 +38,7 @@
 				<artifactId>flexmojos-maven-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
-					<sourceFile>edu/isi/bmkeg/kefed/bin/KefedDesignerApp2.mxml</sourceFile>
+					<sourceFile>edu/isi/bmkeg/kefed/bin/kefedComponent.mxml</sourceFile>
 					<swfVersion>11</swfVersion>
 					<compilerWarnings>
 						<warn-no-constructor>false</warn-no-constructor>
