@@ -39,9 +39,13 @@
 				this.kefedDesigner.cscapeModule.dispatchEvent(event);				
 			}
 			
+			
 		]]>
 	</fx:Script>
 	
-	<kefed:KefedDesignerModule2 id="kefedDesigner" height="100%" width="100%"/>
+	<kefed:KefedDesignerModule2 
+		id="kefedDesigner" 
+		height="100%" 
+		width="100%"/>
 	
 </s:Application>
