@@ -2,36 +2,37 @@
 <s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
 			   xmlns:bin="edu.isi.bmkeg.kefed.designer.bin.*"
 			   xmlns:kefed="edu.isi.bmkeg.kefed.designer.*"
-			   xmlns:tw="edu.isi.bmkeg.tabbedWindows.*"
+			   xmlns:view="edu.isi.bmkeg.kefed.designer.view.*"
 			   xmlns:s="library://ns.adobe.com/flex/spark" 
 			   xmlns:mx="library://ns.adobe.com/flex/mx" 
 			   minWidth="955" 
-			   minHeight="600" 
-			   initialize="application1_initializeHandler(event)">
+			   minHeight="600"
+			   applicationComplete="application1_applicationCompleteHandler(event)">
 	
 	<fx:Declarations>
-		<bin:kefedComponentContext contextView="{this}" />
+		<bin:kefedClientAppContext contextView="{this}" />
 	</fx:Declarations>
-
+	
 	<fx:Script>
 		<![CDATA[
-			import edu.isi.bmkeg.digitalLibrary.model.citations.ArticleCitation;
 			
 			import mx.events.FlexEvent;
 			
-			public var currentArticleCitation:ArticleCitation;
-			
-			// load an existing article for testing
-			protected function application1_initializeHandler(event:FlexEvent):void
+			// Need to dispatch this event to Cytoscape to establish 
+			// application-wide functionality when treating Cytoscape 
+			// web as a module
+			protected function application1_applicationCompleteHandler(event:FlexEvent):void
 			{
-				//this.currentArticleCitation = new ArticleCitation();
-				//this.currentArticleCitation.vpdmfId = 44946
+				this.kefedDesigner.cscapeModule.dispatchEvent(event);				
 			}
+			
 			
 		]]>
 	</fx:Script>
-
-	
-	<kefed:KefedDesignerModule label="Designer" id="kefedDesigner" height="100%" width="100%"/>
+		
+	<kefed:KefedDesignerModule2 
+		id="kefedDesigner" 
+		height="100%" 
+		width="100%"/>
 	
 </s:Application>
