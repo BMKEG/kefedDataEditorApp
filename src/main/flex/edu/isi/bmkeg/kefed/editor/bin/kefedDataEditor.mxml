@@ -17,11 +17,11 @@
 	</fx:Script>
 	
 	<fx:Declarations>
-		<bin:kefedModelEditorContext contextView="{this}" />
+		<bin:kefedDataEditorContext contextView="{this}" />
 	</fx:Declarations>
 	
-	<kefed:KefedModelEditorModule 
-		id="kefedDesigner" 
+	<kefed:KefedDataEditorModule 
+		id="kefedDataEditorModule" 
 		height="100%" 
 		width="100%"/>
 	

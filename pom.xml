@@ -10,7 +10,7 @@
 		<relativePath>../bmkeg-as-parent</relativePath>
 	</parent>
 
-	<artifactId>kefedClientApp</artifactId>
+	<artifactId>kefedDataEditorApp</artifactId>
 	<name>KEfED Client Application</name>
 	<packaging>swf</packaging>
 
